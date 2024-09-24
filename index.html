@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="es">
+    <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-GDQFCB5K4C"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-GDQFCB5K4C');
+</script>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página Especial</title>
+    <style>
+        /* Estilos globales */
+        body {
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #ffc0cb; /* Fondo rosa */
+            font-family: 'Arial', sans-serif;
+            overflow: hidden;
+        }
+
+        /* Contenedor principal */
+        .container {
+            position: relative;
+            width: 80%;
+            height: 80%;
+            max-width: 800px;
+            max-height: 600px;
+            background: url('flor_amarilla.jpeg') no-repeat center center;
+           
+            border: 10px solid rgb(197, 184, 0); /* Marco blanco */
+            box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.5);
+            overflow: hidden;
+            animation: zoomIn 10s infinite alternate; /* Animación de zoom */
+        }
+
+        /* Mensaje */
+        .message {
+            position: absolute;
+            bottom: 20px;
+            left: 50%;
+            transform: translateX(-50%);
+            background-color: rgba(0, 0, 0, 0.5); /* Fondo oscuro semi-transparente para el texto */
+            padding: 15px;
+            border-radius: 10px;
+            font-size: 1.2rem;
+            text-align: center;
+            width: 80%;
+            color: #fff; /* Color del texto */
+        }
+
+       
+
+        /* Estrellas en el fondo */
+        .star {
+            position: absolute;
+            background-color: white;
+            border-radius: 50%;
+            animation: twinkle 2s infinite ease-in-out;
+        }
+
+        @keyframes twinkle {
+            0%, 100% {
+                opacity: 0.3;
+                transform: scale(1);
+            }
+            50% {
+                opacity: 1;
+                transform: scale(1.5);
+            }
+        }
+
+        /* Generar varias estrellas */
+        .star:nth-child(1) { width: 5px; height: 5px; top: 10%; left: 20%; animation-duration: 2s; }
+        .star:nth-child(2) { width: 8px; height: 8px; top: 30%; left: 50%; animation-duration: 3s; }
+        .star:nth-child(3) { width: 6px; height: 6px; top: 70%; left: 80%; animation-duration: 4s; }
+        .star:nth-child(4) { width: 4px; height: 4px; top: 60%; left: 40%; animation-duration: 2.5s; }
+        .star:nth-child(5) { width: 7px; height: 7px; top: 90%; left: 10%; animation-duration: 3.5s; }
+
+        /* Estilos responsivos */
+        @media (max-width: 768px) {
+            .container {
+                width: 95%;
+                height: 95%;
+            }
+
+            .message {
+                font-size: 1rem;
+                padding: 10px;
+                width: 90%;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .message {
+                font-size: 0.9rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Estrellas en el fondo -->
+    <div class="star"></div>
+    <div class="star"></div>
+    <div class="star"></div>
+    <div class="star"></div>
+    <div class="star"></div>
+
+    <!-- Contenedor principal -->
+    <div class="container">
+        <div class="message">
+            En este día, quiero que sepas que cada momento a tu lado hace que el mundo sea más brillante. Eres mi razón para sonreír.
+        </div>
+    </div>
+</body>
+</html>
+
